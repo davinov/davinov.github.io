@@ -13,49 +13,40 @@
 
 		<script src="js/jquery-1.8.2.min.js"></script>
 		<script src="js/google-analytics.js"></script>
-		<script src="js/sharrre/jquery.sharrre-1.3.4.min.js"></script>
 		<script src="js/carousel.js"></script>
 
 		<title>David Nowinsky</title>
 
 	</head>
 	<body class="modern-ui">
-		<div class="page {% block nobackbutton %}secondary{% endblock %}">
-			<header class="page-header">
-				<div class="page-header-content">
-					<nav class="navigation-bar">
-						<div class="navigation-bar-inner">
-							<span class="menu-pull"></span>
+		<header class="page">
+			<nav class="nav-bar bg-color-darken">
+				<div class="nav-bar-inner">
+					<span class="menu-pull"></span>
 
-							<div class="brand">
-								<span class="icon-user-2"></span>
-								<a href="/"><span class="name">David Nowinsky <sup class="fg-color-blue tertiary-info-secondary-text"> Engineering student</sup></span></a>
-							</div>
+					<span class="element brand"> <i class="icon-user-2"> </i> <a href="/"><span class="name">David Nowinsky <sup class="fg-color-blue tertiary-info-secondary-text"> Engineering student</sup></span></a> </span>
+					<div class="divider fg-color-white"></div>
+					<ul class="menu">
+						<li>
+							<a href="/">Home</a>
+						</li>
+						<li>
+							<a href="http://drive.google.com/uc?id=0B8g-JxiAKzYtdkZCaXVUWDR4M1U">CV</a>
+						</li>
+						<li>
+							<a href="/?page=portfolio">Portfolio</a>
+						</li>
+						<li>
+							<a href="mailto:david@nowinsky.net">Contact</a>
+						</li>
+					</ul>
 
-							<ul>
-								<li>
-									<a href="/">Home</a>
-								</li>
-
-								<li>
-									<a href="http://drive.google.com/uc?id=0B8g-JxiAKzYtdkZCaXVUWDR4M1U">CV</a>
-								</li>
-
-								<li>
-								<a href="/?page=portfolio">Portfolio</a>
-								</li>
-
-								<li>
-									<a href="mailto:david@nowinsky.net">Contact</a>
-								</li>
-							</ul>
-
-						</div>
-					</nav>
-
-					<script src="js/dropdown.js"></script>
 				</div>
-			</header>
+			</nav>
+		</header>
+		<script src="js/dropdown.js"></script>
+
+		<div class="page {% block nobackbutton %}secondary{% endblock %}">
 
 			{% block noheader %}
 			<div class="page-header">
@@ -67,15 +58,21 @@
 			{% endblock %}
 
 			<div class="page-region">
+				<div class="page-region-content">
 				{% block content %}
 				{% endblock %}
+				</div>
 			</div>
-			<footer class="navigation-bar">
-				<div class="navigation-bar-inner bg-color-darken">
+
+		</div>
+		
+		<footer class="page">
+			<div class="nav-bar">
+				<div class="nav-bar-inner bg-color-darken">
 					<span class="element"> 2012, <a href="mailto:david@nowinsky.net">David Nowinsky</a>. Using <a href="https://developers.google.com/appengine/">Google App Engine</a> and <a href="http://metroui.org.ua">Metro UI CSS</a> </span>
 				</div>
-			</footer>
-		</div>
+			</div>
+		</footer>
 
 	</body>
 </html>
