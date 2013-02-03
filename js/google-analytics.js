@@ -1,4 +1,4 @@
-var google_analytics_code = 'UA-29784128-1';
+var google_analytics_code = 'UA-36812575-1';
 
 var _gaq = _gaq || [];
 _gaq.push(['_setAccount', google_analytics_code]);
