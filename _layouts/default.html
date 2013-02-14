@@ -15,6 +15,7 @@
         <script src="js/jquery.sharrre-1.3.4.min.js"></script>
 
         <script src="js/google-analytics.js"></script>
+        <script src="js/dropdown.js"></script>
         <script src="js/carousel.js"></script>
 
         <title>David Nowinsky{% if page.title %} - {{page.title}}{% endif %}</title>
@@ -32,8 +33,12 @@
                         <li>
                             <a href="/">Home</a>
                         </li>
-                        <li>
-                            <a href="http://drive.google.com/uc?id=0B8g-JxiAKzYtdkZCaXVUWDR4M1U">CV</a>
+                        <li data-role="dropdown">
+                            <a href="#">CV</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="http://drive.google.com/uc?id=0B8g-JxiAKzYtMXk1TGE3ei02ZkU">English</a></li>
+                                <li><a href="http://drive.google.com/uc?id=0B8g-JxiAKzYtdkZCaXVUWDR4M1U">French</a></li>
+                            </ul>
                         </li>
                         <li>
                             <a href="/portfolio.html">Portfolio</a>
