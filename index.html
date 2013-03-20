@@ -230,21 +230,15 @@ layout: index
             </div> </a>
             <div class="tile double bg-color-blueLight">
                 <div class="tile-content text-center" id="share">
-                    <div id="shareme" data-url="http://david.nowinsky.net" data-text="David Nowinsky's personal website"></div>
+	        	<div data-social-share-privacy='true'></div>
                 </div>
-                <script>
-					$('#shareme').sharrre({
-						share : {
-							googlePlus : true,
-							facebook : true,
-							twitter : true,
-							linkedin : true
-						},
-						enableHover: false,
-                        enableCounter: false, 
-						url : 'http://david.nowinsky.net'
-					});
-                </script>
+                <script type="text/javascript" src="http://panzi.github.com/SocialSharePrivacy/javascripts/jquery.cookies.js"></script>
+		<script type="application/x-social-share-privacy-settings">
+		{"path_prefix":"http://panzi.github.com/SocialSharePrivacy/","layout":"line","uri":"david.nowinsky.net","services":{"buffer":{"status":false},"delicious":{"status":false},"disqus":{"status":false},"flattr":{"status":false},"hackernews":{"status":false},"mail":{"status":false},"pinterest":{"status":false},"reddit":{"status":false},"stumbleupon":{"status":false},"tumblr":{"status":false},"xing":{"status":false}}}
+		</script>
+		<script type="text/javascript">
+			(function () {var s = document.createElement('script');var t = document.getElementsByTagName('script')[0];s.type = 'text/javascript';s.async = true;s.src = 'http://panzi.github.com/SocialSharePrivacy/javascripts/jquery.socialshareprivacy.min.autoload.js';t.parentNode.insertBefore(s, t);})();
+		</script>
                 <div class="brand">
                     <div class="name fg-color-darken">
                         Share
