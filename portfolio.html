@@ -7,20 +7,33 @@ css: css/portfolio.css
 ---
 <div class="container">
 
-        <div class="row-fluid text-center">
+        <div class="row text-center">
             <p>
-            <div class="btn-group" data-toggle="buttons-radio" id="filter">
-                <button class="btn btn-primary" data-filter="*">See all</button>
-                <button class="btn innovation" data-filter=".innovation">Innovative projects</button>
-                <button class="btn school" data-filter=".school">School projects</button>
-                <button class="btn web" data-filter=".web">Websites</button>
-                <button class="btn design" data-filter=".design">Comm &amp; design</button>
-                <button class="btn maths" data-filter=".maths">Maths &amp; physics</button>
-            </div></p>
+                <div class="btn-group" data-toggle="buttons" id="filter">
+                    <label class="btn btn-default" data-filter="*">
+                        <input type="radio"> See all
+                    </label>
+                    <label class="btn innovation" data-filter=".innovation">
+                        <input type="radio"> Innovative projects
+                    </label>
+                    <label class="btn school" data-filter=".school">
+                        <input type="radio"> School projects
+                    </label>
+                    <label class="btn web" data-filter=".web">
+                        <input type="radio"> Websites
+                    </label>
+                    <label class="btn design" data-filter=".design">
+                        <input type="radio"> Comm &amp; design
+                    </label>
+                    <label class="btn maths" data-filter=".maths">
+                        <input type="radio"> Maths &amp; physics
+                    </label>
+                </div>
+            </p>
         </div>
 
         <section id="portfolio" class="row">
-            <article class="span4 web innovation school" id="essilor-masterpic">
+            <article class="col-md-4 web innovation school" id="essilor-masterpic">
                 <h3>Building a online community to share best practices - Master PIC (2013)</h3>
                 <p>
                     My project's defense for Ecole Polytechnique's <a href="http://masterpic.fr">Master Project Innovation & Conception</a> in <a href="http://www.essilor.com">Essilor</a>.
@@ -31,7 +44,7 @@ css: css/portfolio.css
                 </p>
             </article>
 
-            <article class="span4 web" id="montreal-masterpic">
+            <article class="col-md-4 web" id="montreal-masterpic">
                 <h3>Montreal study trip - Master PIC (2012)</h3>
                 <p>
                     Ecole Polytechnique's <a href="http://masterpic.fr">Master Project Innovation & Conception</a>, which I joined, went to Montreal 10 days to discover the innovative environment provided by the canadian city and the enterprises involved.
@@ -41,7 +54,7 @@ css: css/portfolio.css
                 </p>
             </article>
 
-            <article class="span4 innovation school" id="smartways">
+            <article class="col-md-4 innovation school" id="smartways">
                 <h3>SmartWays</h3>
                 <p>
                     Télécom ParisTech's selected project for the <a href="http://www.fondation-telecom.org/actualites/d%C3%A9couvrez-les-projets-first-2012-140/">FIRST 2012 (Institut Télécom) program</a>. Realised with Thomas Belhalfaoui, Kenny Durand, Constance Morel and Maud Picq from Télécom ParisTech and Julie Delattre from ESAD Reims. Sponsored by Google &amp; BNP Paribas. Presented in Singapore, July 2012.
@@ -55,7 +68,7 @@ css: css/portfolio.css
                 </p>
             </article>
 
-            <article class="span4 web design" id="plaquette-alpha">
+            <article class="col-md-4 web design" id="plaquette-alpha">
                 <h3>Student's leaflet</h3>
                 <p>
                     Master design of the document presenting student's life @ Télécom ParisTech to school's applicants (editions 2011, 2012 and 2013). Realized with Adobe InDesign.
@@ -68,7 +81,7 @@ css: css/portfolio.css
                 </p>
             </article>
 
-            <article class="span4 school web" id="etic">
+            <article class="col-md-4 school web" id="etic">
                 <h3>Online voting controversy</h3>
                 <p>
                     A website presenting the controversy "online voting and citizenship".
@@ -85,7 +98,7 @@ css: css/portfolio.css
                 </p>
             </article>
 
-            <article class="span4 school" id="organisational-learning">
+            <article class="col-md-4 school" id="organisational-learning">
                 <h3>Organisational learning</h3>
                 <iframe src="http://www.slideshare.net/slideshow/embed_code/12916514?rel=0" width="100%" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe>
                 <p>
@@ -93,7 +106,7 @@ css: css/portfolio.css
                 </p>
             </article>
 
-            <article class="span4 school" id="projet-materiel">
+            <article class="col-md-4 school" id="projet-materiel">
                 <h3>Hardware game-coding</h3>
                 <p>
                     A one-week intense project of Télécom ParisTech (during first year) to develop from scratch a game on FPGA platform with Verilog language. Realised with Clément Péron and Jérémy Sauget. Professors : Alexis Polti &amp; Samuel Tardieu.
@@ -101,7 +114,7 @@ css: css/portfolio.css
                 <iframe width="100%" src="http://www.youtube.com/embed/4eA9a2pw-xg?rel=0" frameborder="0" allowfullscreen></iframe>
             </article>
 
-            <article class="span4 school" id="launchpad">
+            <article class="col-md-4 school" id="launchpad">
                 <h3>Launchpad novation</h3>
                 <iframe src="http://www.slideshare.net/slideshow/embed_code/12797835?rel=0" width="100%" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe>
                 <p>
@@ -109,7 +122,7 @@ css: css/portfolio.css
                 </p>
             </article>
 
-            <article class="span4 school design" id="athens">
+            <article class="col-md-4 school design" id="athens">
                 <h3>Regulating telecommunication market</h3>
                 <iframe src="http://www.slideshare.net/slideshow/embed_code/12123381?rel=0" width="100%" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe>
                 <p>
@@ -117,7 +130,7 @@ css: css/portfolio.css
                 </p>
             </article>
 
-            <article class="span4 innovation school" id="clearway">
+            <article class="col-md-4 innovation school" id="clearway">
                 <h3>ClearWay</h3>
                 <p>
                     Second-year Télécom ParisTech's candidate project for the <a href="http://www.fondation-telecom.org/page/notre-action-5/programmes-en-formation-9/#First">FIRST 2012 (Institut Télécom) program</a>. Selected by the jury and became later <a href="#smartways">SmartWays</a>. Realised with Thomas Belhalfaoui, Kenny Durand, Constance Morel and Maud Picq. <a href="https://docs.google.com/file/d/0B8g-JxiAKzYtMkF6N1VXUHYxemc/preview">Read our candidate file here (french)</a>.
@@ -128,7 +141,7 @@ css: css/portfolio.css
                 </p>
             </article>
 
-            <article class="span4 maths" id="mej2009">
+            <article class="col-md-4 maths" id="mej2009">
                 <h3>Floating surface</h3>
                 <iframe src="http://www.slideshare.net/slideshow/embed_code/10519142?rel=0" width="100%" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe>
                 <p>
@@ -136,7 +149,7 @@ css: css/portfolio.css
                 </p>
             </article>
 
-            <article class="span4 maths" id="mej2008">
+            <article class="col-md-4 maths" id="mej2008">
                 <h3>Vampire's mirror</h3>
                 <iframe src="http://www.slideshare.net/slideshow/embed_code/10519195?rel=0" width="100%" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe>
                 <p>
@@ -144,7 +157,7 @@ css: css/portfolio.css
                 </p>
             </article>
 
-            <article class="span4 design" id="teletubbed">
+            <article class="col-md-4 design" id="teletubbed">
                 <h3>Students' union campaign (communication)</h3>
                 <p>
                     Ran for the students' union of Télécom ParisTech (2011). Develop and manage the communication of <a href="http://teletubbed.fr">a list of 14 people</a>, sponsored by CommentCaMarche.net, Aastraa, Numericable, Parrot, U Man Cola, etc. <span class="tertiary-info-secondary-text">That was a really great experience, working with an amazing team! And we nearly got elected ;)</span>
@@ -165,15 +178,15 @@ css: css/portfolio.css
         function classFor(tag){
             switch(tag){
                 case "innovation":
-                    return "info";
+                    return "primary";
                 case "school":
-                    return "success";
+                    return "info";
                 case "web":
-                    return "warning";
+                    return "success";
                 case "design":
-                    return " ";
+                    return "warning";
                 case "maths":
-                    return "inverse";
+                    return "danger";
             }
         }
         function iconFor(tag){
@@ -200,7 +213,7 @@ css: css/portfolio.css
                 var classes = $(this).attr("class").split(" ");
                 for(var i in classes)
                     if(classFor(classes[i])){
-                        $(this).find("h3:first-child").append("&nbsp;<i class='icon-"+iconFor(classes[i])+" badge badge-"+classFor(classes[i])+"'> </i>");
+                        $(this).find("h3:first-child").append("&nbsp;<small><i class='icon-"+iconFor(classes[i])+" label label-"+classFor(classes[i])+"'> </i></small>");
                     }
             });
             portfolio.isotope({
