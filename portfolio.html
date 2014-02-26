@@ -33,6 +33,20 @@ css: css/portfolio.css
         </div>
 
         <section id="portfolio" class="row">
+            <article class="col-md-4 web" id="kewl">
+                <h3>Kewl brunch skeleton</h3>
+                <p>
+                    A <a href="http://brunch.io">Brunch</a> skeleton to demonstrate fast and graceful communication between <a href="http://angularjs.org">AngularJS</a> and <a href="http://en.wikipedia.org/wiki/Representational_state_transfer">REST APIs</a>.
+                </p>
+                <div class="speakerdeck"><script async class="speakerdeck-embed" data-id="ef1a63607f360131515d36201398785d" data-ratio="1.33333333333333" src="//speakerdeck.com/assets/embed.js"></script></div>
+                    <p>
+                    The conception of this demo app was presented during <a href="http://www.meetup.com/AngularJS-Paris/events/165733502/">ngParis #8 meetup</a> on january 2014.
+                </p>
+                <p>
+                    Visit <a href="kewl">the website</a>, <a href="kewl/#/walkthrough">read the associated tutorial</a> or check the <a href="https://github.com/davinov/kewl">GitHub repository</a>.
+                </p>
+            </article>
+
             <article class="col-md-4 web innovation school" id="essilor-masterpic">
                 <h3>Building a online community to share best practices - Master PIC (2013)</h3>
                 <p>
@@ -76,7 +90,7 @@ css: css/portfolio.css
                 <div data-configid="8597686/3617615" style="width: 400px; height: 200px;" class="issuuembed"></div><script type="text/javascript" src="//e.issuu.com/embed.js" async="true"></script>
                 <p>
                     <a class="btn" href="http://alphacrombie.rezel.net">
-                        <i class="icon-external-link"></i> Visit 2013 website
+                        <i class="fa fa-external-link"></i> Visit 2013 website
                     </a>
                 </p>
             </article>
@@ -90,7 +104,7 @@ css: css/portfolio.css
                     Part of the first-year Télécom ParisTech's course <a href="ethique-tic.fr">Ethique des TIC</a>. Laureate and presented @ ENSAD Paris during <a href="http://futurenseinefr.blogspot.fr/2011/06/cartographier-les-controverses.html">Futur en Seine 2011</a>. Realised with Vincent Bourzeix, Alexandre Cousin, Fatima Gasmi, Julien Madar, Jérémy Sauget and Yassir Sennoun. Professor: Clément Mabi.
                 </p>
                 <p>
-                    <a class="btn" href="http://ethique-tic.fr/2011/vote-en-ligne"><i class="icon-external-link"></i> Visit the website</a>
+                    <a class="btn" href="http://ethique-tic.fr/2011/vote-en-ligne"><i class="fa fa-external-link"></i> Visit the website</a>
                 <p>
                 <iframe src="http://www.slideshare.net/slideshow/embed_code/10519079?rel=0" width="100%" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe>
                 <p>
@@ -192,13 +206,13 @@ css: css/portfolio.css
         function iconFor(tag){
             switch(tag){
                 case "innovation":
-                    return "lightbulb";
+                    return "lightbulb-o";
                 case "school":
                     return "book";
                 case "web":
                     return "globe";
                 case "design":
-                    return "picture";
+                    return "picture-o";
                 case "maths":
                     return "beaker";
             }
@@ -209,11 +223,14 @@ css: css/portfolio.css
             portfolio.find('iframe').each(function() {
                 $(this).css('height', $(this).width() * 3 / 4 + 38);
             });
+            portfolio.find('.speakerdeck').each(function() {
+                $(this).css('height', $(this).width() * 3 / 4 + 58);
+            });
             portfolio.find("article").each(function() {
                 var classes = $(this).attr("class").split(" ");
                 for(var i in classes)
                     if(classFor(classes[i])){
-                        $(this).find("h3:first-child").append("&nbsp;<small><i class='icon-"+iconFor(classes[i])+" label label-"+classFor(classes[i])+"'> </i></small>");
+                        $(this).find("h3:first-child").append("&nbsp;<small><i class='fa fa-"+iconFor(classes[i])+" label label-"+classFor(classes[i])+"'> </i></small>");
                     }
             });
             portfolio.isotope({
@@ -224,7 +241,7 @@ css: css/portfolio.css
                 var classes = $(this).attr("class").split(" ");
                 for(var i in classes)
                     if(classFor(classes[i])){
-                        $(this).addClass("btn-"+classFor(classes[i])).prepend("<i class='icon-"+iconFor(classes[i])+"'></i> ");
+                        $(this).addClass("btn-"+classFor(classes[i])).prepend("<i class='fa fa-"+iconFor(classes[i])+"'></i> ");
                     }
             });
             filter.find(".btn:first-child").button("toogle");

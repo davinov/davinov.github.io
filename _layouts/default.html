@@ -7,20 +7,20 @@
     <meta name="author" content="David Nowinsky">
     <meta name="keywords" content="site personnel, innovation, webdesign, interfaces, gui, ingénieur, télécom">
 
-    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
     <style>
     	body { padding-top: 50px; }
     </style>
     <!--<link href="//netdna.bootstrapcdn.com/bootswatch/2.3.2/flatly/bootstrap.min.css" rel="stylesheet">-->
-    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
     {% if page.css %}
     <link href="{{page.css}}" rel="stylesheet">
     {% endif %}
 
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 
     <script src="js/google-analytics.js"></script>
-    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
 
     <title>David Nowinsky{% if page.title %} - {{page.title}}{% endif %}</title>
 
@@ -32,9 +32,9 @@
 	    	<div class="navbar-header">
 	            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
 	                <span class="sr-only">Toggle navigation</span>
-	                <span class="icon-bar"></span>
-	                <span class="icon-bar"></span>
-	                <span class="icon-bar"></span>
+	                <span class="fa fa-bar"></span>
+	                <span class="fa fa-bar"></span>
+	                <span class="fa fa-bar"></span>
 	            </button>
 
                 <a class="navbar-brand" href="/">
@@ -46,7 +46,7 @@
                 <div class="divider fg-color-white"></div>
                 <ul class="nav navbar-nav">
                     <li>
-                        <a href="/"><i class="icon-home"></i></a>
+                        <a href="/"><i class="fa fa-home"></i></a>
                     </li>
                     {% for node in site.pages %}
                     	{% if node.top-menu == true %}
@@ -55,15 +55,15 @@
 				                        {% else %}
 				                    <li>
 			                    {% endif %}
-		                    <a href="{{node.url}}"><i class="icon-{{node.icon}}"></i> {{node.title}}</a>
+		                    <a href="{{node.url}}"><i class="fa fa-{{node.icon}}"></i> {{node.title}}</a>
 		                	</li>
 	                    {% endif %}
                     {% endfor %}
                     <li>
-                        <a href="http://fr.linkedin.com/pub/david-nowinsky/34/7/39/en"><i class="icon-file-alt"></i> CV</a>
+                        <a href="http://fr.linkedin.com/pub/david-nowinsky/34/7/39/en"><i class="fa fa-file-alt"></i> CV</a>
                     </li>
                     <li>
-                        <a href="mailto:{{site.author.email}}"><i class="icon-envelope"></i> Contact</a>
+                        <a href="mailto:{{site.author.email}}"><i class="fa fa-envelope"></i> Contact</a>
                     </li>
                 </ul>
             </div>
@@ -73,7 +73,7 @@
 
 {% if page.title %}
 <div class="container">
-    <h2><i class="icon-{{page.icon}}"></i> {{page.title}}</h2>
+    <h2><i class="fa fa-{{page.icon}}"></i> {{page.title}}</h2>
 </div>
 {% endif %}
 
