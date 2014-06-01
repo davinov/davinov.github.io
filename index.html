@@ -11,7 +11,8 @@ css: css/home.css
 
 <section id="welcome" class="jumbotron">
     <div class="container">
-        <h3>Agile web developper @<a href="http://www.theodo.fr" target="_blank">Theodo</a></h3>
+        <h3>Agile web developer @<a href="http://www.theodo.fr" target="_blank">Theodo</a></h3>
+        <p>I'm a web fanatic with enthusiasm for CoffeeScript, Jade, Less, NodeJS, AngularJS, Capistrano, Ansible, Scrum and DevOps and Lean principles.</p>
         <p>I studied at <a href="http://www.telecom-paristech.fr" target="_blank">Télécom ParisTech</a> and <a href="http://www.masterpic.fr" target="_blank">Master PIC</a> the following areas:
             <ul class="list-inline lead">
                 <li><i class="fa fa-globe"></i> Web</li>
@@ -21,7 +22,7 @@ css: css/home.css
             </ul>
         </p>
         <p>
-            I <i class="fa fa-heart"></i> cooking, biking, watching The Lord of The Rings, eating chocolate, designing wood bows, speaking german and even to bartend from time to time!
+            I <i class="fa fa-heart"></i> cooking, biking, watching The Lord of The Rings, eating chocolate, designing wood bows, listening techno music and even to bartend from time to time!
         </p>
         <p>
             Find me on:
@@ -77,18 +78,63 @@ css: css/home.css
     </div>
 </section>
 
-<!--<section class="container" id="share">
-    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script type="text/javascript" src="http://panzi.github.com/SocialSharePrivacy/javascripts/jquery.cookies.js"></script>
-    <script type="application/x-social-share-privacy-settings">{"path_prefix":"http://panzi.github.com/SocialSharePrivacy/","layout":"line","uri":"david.nowinsky.net","services":{"buffer":{"status":false},"delicious":{"status":false},"disqus":{"status":false},"flattr":{"status":false},"hackernews":{"status":false},"mail":{"status":false},"pinterest":{"status":false},"reddit":{"status":false},"stumbleupon":{"status":false},"tumblr":{"status":false},"xing":{"status":false}}}</script>
-    <div data-social-share-privacy='true'></div>
-    <script type="text/javascript">(function () {var s = document.createElement('script');var t = document.getElementsByTagName('script')[0];s.type = 'text/javascript';s.async = true;s.src = 'http://panzi.github.com/SocialSharePrivacy/javascripts/jquery.socialshareprivacy.min.autoload.js';t.parentNode.insertBefore(s, t);})();</script>
-</section>-->
-
 <section class="container">
     <div class="row">
         <div class="row col-md-8" id="projects">
             <h2><i class="fa fa-star"></i> Highlighted projects</h2>
+            <hr>
+            <article id="devops-metrix">
+                <h3><img style="float:right;max-width:30%;max-height:5em;" src="img/devops-metrix.png" alt="Devops Metrics">
+                    Devops Matrix</h3>
+
+                <p>
+                    An <a href="http://angularjs.org">AngularJS</a> and <a href="d3js.org">D3.js</a>
+                    visualisation realized with Jean-Rémi Beaudoin and Adlen Afane during a hackathon
+                    organized by <a href="http://www.societegenerale.fr">Société Générale</a> about inventing
+                    tomorrow's IT department's tools.
+                </p>
+
+                <p>
+                    It's a dashboard representing in one screen the DevOps state of a projects' wallet.
+                    It's meant to display project's agility metrics in a single view to help IT heads
+                    encourage good actions in the path of transforming project's to new standards and
+                    to stimulate development team to become always more agile than they're now.
+                </p>
+
+                <p>
+                    <a class="btn btn-default" href="http://tinyurl.com/devops-metrix">
+                        <i class="fa fa-external-link"></i> Project's demo
+                    </a>
+                    <a class="btn btn-default" href="https://github.com/jrbeaudoin/devops-metrix">
+                        <i class="fa fa-github"></i> Github repository
+                    </a>
+                    <a class="btn btn-default" href="https://speakerdeck.com/davinov/devops-metrix">
+                        <i class="fa fa-file"></i> Introductive slides
+                    </a>
+                    <a class="btn btn-default" href="http://blog.theodo.fr">
+                        <i class="fa fa-comments-o"></i> Blog article about the hackathon
+                    </a>
+                </p>
+            </article>
+            <hr>
+            <article id="gulp-book">
+                <h3>Gulp: the modern front-end factory</h3>
+
+                <p>
+                    A brief <a href="http://gitbook.io">gitbook</a> to share what I learned about <a href="http://gulpjs.com">Gulp</a>
+                    and provide useful tasks to developers that could need help starting with this
+                    amazing tool.
+                </p>
+
+                <p>
+                    <a class="btn btn-default" href="gulp-book">
+                        <i class="fa fa-book"></i> Read the book
+                    </a>
+                    <a class="btn btn-default" href="http://www.reddit.com/r/Frontend/comments/263tw2/my_little_gulp_cookbook/">
+                        <i class="fa fa-reddit"></i> Discuss on Reddit
+                    </a>
+                </p>
+            </article>
             <hr>
             <article id="kewl">
                 <h3><img style="float:right;max-width:60%;max-height:10em;" src="img/kewl.png" alt="Kewl">
@@ -130,7 +176,7 @@ css: css/home.css
                     </a>
                 </p>
             </article>
-            <hr>
+            <!--<hr>
             <article id="smartways">
                 <div class="row">
                     <div class="col-md-6">
@@ -171,12 +217,12 @@ css: css/home.css
                     </div>
                 </div>
                 <p>
-                    Réalisé avec Thomas Belhalfaoui, Kenny Durand, Constance Morel, Maud Picq (Télécom ParisTech) et Julie Delattre (ESAD Reims).
+                    Realized with Thomas Belhalfaoui, Kenny Durand, Constance Morel, Maud Picq (Télécom ParisTech) and Julie Delattre (ESAD Reims).
                 </p>
                 <p>
                     <a class="btn btn-default" href="https://play.google.com/store/apps/details?id=com.smartways.android"><i class="fa fa-download"></i> Download SmartWays</a>
                 </p>
-            </article>
+            </article>-->
             <hr>
             <p>
                 <a class="btn btn-primary btn-block" href="portfolio.html">

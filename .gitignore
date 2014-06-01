@@ -30,7 +30,6 @@ nosetests.xml
 *.mo
 
 # Mr Developer
-.idea
 .mr.developer.cfg
 .project
 .pydevproject
