@@ -2,7 +2,7 @@
     padding: 30px;
 }
 
-#cover{
+#cover {
     color: white;
     background: url("../img/cover.jpg");
     background-repeat: no-repeat;
@@ -10,7 +10,7 @@
     background-position: center;
     margin: 0;
 }
-#cover h1, #cover h2, #cover h3, #cover p{
+#cover h1, #cover h2, #cover h3, #cover p {
     color: white;
 }
 

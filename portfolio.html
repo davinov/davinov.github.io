@@ -13,14 +13,14 @@ css: css/portfolio.css
                     <label class="btn btn-default" data-filter="*">
                         <input type="radio"> See all
                     </label>
-                    <label class="btn innovation" data-filter=".innovation">
-                        <input type="radio"> Innovative projects
+                    <label class="btn web" data-filter=".web">
+                        <input type="radio"> Web
                     </label>
                     <label class="btn school" data-filter=".school">
                         <input type="radio"> School projects
                     </label>
-                    <label class="btn web" data-filter=".web">
-                        <input type="radio"> Websites
+                    <label class="btn innovation" data-filter=".innovation">
+                        <input type="radio"> Innovation
                     </label>
                     <label class="btn design" data-filter=".design">
                         <input type="radio"> Comm &amp; design
@@ -33,6 +33,67 @@ css: css/portfolio.css
         </div>
 
         <section id="portfolio" class="row">
+
+            <article class="col-md-4 web design" id="devops-metrix">
+                <h3>Devops Metrix</h3>
+
+                <p>
+                    An <a href="http://angularjs.org">AngularJS</a> and <a href="d3js.org">D3.js</a>
+                    visualisation realized with Jean-Rémi Beaudoin and Adlen Afane during a hackathon
+                    organized by <a href="http://www.societegenerale.fr">Société Générale</a> about inventing
+                    tomorrow's IT department's tools.
+                </p>
+
+                <p>
+                    It's a dashboard representing in one screen the DevOps state of a projects' wallet.
+                    It's meant to display project's agility metrics in a single view to help IT heads
+                    encourage good actions in the path of transforming project's to new standards and
+                    to stimulate development team to become always more agile than they're now.
+                </p>
+
+                <div class="speakerdeck">
+                    <script async class="speakerdeck-embed" data-id="67abd6c0c65701312f5512d278fd0f6e"
+                            data-ratio="1.33333333333333" src="//speakerdeck.com/assets/embed.js"></script>
+                </div>
+
+                <p>
+                    See the <a href="http://tinyurl.com/devops-metrix"> project's demo</a>,
+                    take a look to the <a href="https://github.com/jrbeaudoin/devops-metrix">
+                    Github repository</a> and read the
+                    <a href="http://www.theodo.fr/blog/2014/06/hackathon42-societegenerale/">
+                    blog article about the hackathon</a>.
+                </p>
+            </article>
+
+            <article class="col-md-4 web" id="gulp-book">
+                <h3>Gulp: the modern frontend factory</h3>
+
+                <p>
+                    A brief <a href="http://gitbook.io">gitbook</a> to share what I learned about
+                    <a href="http://gulpjs.com">Gulp</a> and provide useful tasks to developers
+                    that could need help starting with this amazing tool.
+                </p>
+
+                <p>
+                    Read <a href="gulp-book">the book</a> and discuss it on
+                    <a href="http://www.reddit.com/r/Frontend/comments/263tw2/my_little_gulp_cookbook/">
+                    Reddit</a>.
+            </article>
+
+            <article class="col-md-4 web" id="code-fashion-victim">
+                <h3>Code like a #FashionVictim</h3>
+
+                <p>
+                    A quick presentation for colleagues of a big firm to introduce them to awesome alternative
+                    languages like Coffeescript, Jade and LESS.
+                </p>
+
+                <div class="speakerdeck">
+                    <script async class="speakerdeck-embed" data-id="25b85380a90b0131565a426f673016e8"
+                            data-ratio="1.33333333333333" src="//speakerdeck.com/assets/embed.js"></script>
+                </div>
+            </article>
+
             <article class="col-md-4 web" id="kewl">
                 <h3>Kewl brunch skeleton</h3>
                 <p>
@@ -191,11 +252,11 @@ css: css/portfolio.css
     <script type="text/javascript" charset="utf-8">
         function classFor(tag){
             switch(tag){
-                case "innovation":
+                case "web":
                     return "primary";
                 case "school":
                     return "info";
-                case "web":
+                case "innovation":
                     return "success";
                 case "design":
                     return "warning";
@@ -214,7 +275,7 @@ css: css/portfolio.css
                 case "design":
                     return "picture-o";
                 case "maths":
-                    return "beaker";
+                    return "flask";
             }
         }
 
@@ -224,7 +285,7 @@ css: css/portfolio.css
                 $(this).css('height', $(this).width() * 3 / 4 + 38);
             });
             portfolio.find('.speakerdeck').each(function() {
-                $(this).css('height', $(this).width() * 3 / 4 + 58);
+                $(this).css('height', $(this).width() * 3 / 4 + 68);
             });
             portfolio.find("article").each(function() {
                 var classes = $(this).attr("class").split(" ");
