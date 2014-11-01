@@ -2,6 +2,11 @@
     padding: 30px;
 }
 
+#social {
+    box-shadow: 0 3px 0 0 #fafafa;
+    margin-bottom: 2em;
+}
+
 #cover {
     color: white;
     background: url("../img/cover.jpg");
@@ -15,5 +20,5 @@
 }
 
 #twitter-widget-0 {
-	width: 100%;
+    width: 100%;
 }
