@@ -16,9 +16,6 @@ css: css/portfolio.css
                     <label class="btn web" data-filter=".web">
                         <input type="radio"> Web
                     </label>
-                    <label class="btn school" data-filter=".school">
-                        <input type="radio"> School projects
-                    </label>
                     <label class="btn innovation" data-filter=".innovation">
                         <input type="radio"> Innovation
                     </label>
@@ -28,11 +25,79 @@ css: css/portfolio.css
                     <label class="btn maths" data-filter=".maths">
                         <input type="radio"> Maths &amp; physics
                     </label>
+                    <label class="btn school" data-filter=".school">
+                        <input type="radio"> School projects
+                    </label>
                 </div>
             </p>
         </div>
 
         <section id="portfolio" class="row">
+
+            <article id="stained-glass" class="col-md-4 web design">
+                <h3>
+                    Stained glass
+                </h3>
+
+                <p>
+                    A JavaScript library to create astonished geometrical pictures based on
+                    real ones.
+                </p>
+
+                <p>
+                  <img style="max-width:100%;" src="img/stained-glass.svg" alt="Stained glass example">
+                </p>
+
+                <p>
+                    A d3.js experiment to bridge art and code.
+                </p>
+
+                <p>
+                    Available on bower and npm.
+                </p>
+
+                <p>
+                    <a class="btn btn-info" href="http://david.nowinsky.net/stained-glass">
+                        <i class="fa fa-external-link"></i> Website
+                    </a>
+                    <a class="btn btn-default" href="https://github.com/davinov/stained-glass">
+                        <i class="fa fa-github"></i> Code
+                    </a>
+                </p>
+            </article>
+
+            <article id="cupider" class="col-md-4 web innovation">
+                <h3>
+                    <img style="float:right;max-width:30%;max-height:5em;" src="img/cupider.png" alt="Cupider">
+                    Cupider
+                </h3>
+
+                <h4>Retired! :-(</h4>
+
+                <p>
+                    An <a href="http://ionicframework.com">Ionic</a> app for Android and iPhone
+                    inspired by Tinder, but to match your friends in need!
+                </p>
+
+                <p>
+                    Developped with Maxime Thoonsen and Nicolas Bazire, based on an idea of Lucie Notaro,
+                    with the help of Romain Marcillaud.
+                    Design by my lovely flatmates, <a href="http://lucasparisot.com/">Lucas Parisot</a>
+                    and <a href="https://ambreleca.wordpress.com/">Ambre Leca</a>.
+                </p>
+
+                <p>
+                    <a class="btn btn-info" href="http://www.cupider.com">
+                        <i class="fa fa-external-link"></i> Website
+                    </a>
+                    <a class="btn btn-default" href="https://play.google.com/store/apps/details?id=com.ionicframework.cupiderionic353926">
+                        <i class="fa fa-android"></i> Android app
+                    </a>
+                    <a class="btn btn-default" href="">
+                        <i class="fa fa-apple"></i> iOS app
+                    </a>
+                </p>
+            </article>
 
             <article class="col-md-4 web design" id="devops-metrix">
                 <h3>Devops Metrix</h3>
@@ -254,13 +319,13 @@ css: css/portfolio.css
             switch(tag){
                 case "web":
                     return "primary";
-                case "school":
+                case "maths":
                     return "info";
                 case "innovation":
                     return "success";
                 case "design":
                     return "warning";
-                case "maths":
+                case "school":
                     return "danger";
             }
         }
