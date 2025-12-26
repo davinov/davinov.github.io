@@ -5,9 +5,9 @@
   --text-muted: #a0a0a0;
 
   /* rebeccapurple */
-  --accent-hue: 270;
-  --accent-saturation: 50%;
-  --accent-lightness: 40%;
+  --accent-hue: 250.91;
+  --accent-saturation: 41.90%;
+  --accent-lightness: 41.18%;
   --accent-color: hsl(var(--accent-hue), var(--accent-saturation), var(--accent-lightness));
 
   --accent-hover: #7d4fb3;
